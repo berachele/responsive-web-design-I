@@ -189,11 +189,15 @@ nav a{
 	text-decoration: unset;
     display:flex;
     align-items: center;
-	margin: 2% 0 0;
+	margin: 2% 16% 0 0;
 }
 nav{	
 	display:flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
+}
+nav div{
+    display: flex;
+    align-items: center;
 }
 
 /*IMG STYLING IN MIDDLE*/
@@ -221,17 +225,25 @@ footer{
 /*800px VIEW--AKA THE TABLET VIEW*/
 @media(max-width:800px){
     nav{
+        display:flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
-        border: 1px solid red;
+        flex-wrap: wrap-reverse;
+        max-width: 100%;
+    }
+    .links{
+        display:flex;
+        justify-content: space-around;
+        width: 100%;
     }
     nav a{
-        border: 1px solid red;
+        margin: 2% 0 0 0;
     }
-    nav .logo{
+    .logo{
+        margin: 10% 0;
+    }
+    nav div{
         display:flex;
-        flex-direction: column;
-        background-color: peachpuff;   
+        justify-content: center;
     }
     .circle{
         display:none;
