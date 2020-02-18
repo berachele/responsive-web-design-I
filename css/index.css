@@ -285,5 +285,46 @@ footer{
 }
 /*500px VIEW--AKA THE MOBILE VIEW*/
 @media(max-width:500px){
-
+    nav{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    nav div{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    nav a{
+        border-top: 1px solid black;
+        padding: 1% 0;
+        font-size: 20px;
+        width: 75%;
+        justify-content: center;
+    }
+    .contact{
+        border-bottom: 1px solid black;
+    }
+    h1{
+        width: 177%;
+        margin-left: -40%;
+    }
+    .one{
+        flex-direction: column;
+    }
+    .one div{
+        width: 80%;
+        margin-top: 1%;
+    }
+    h2{
+        margin: 6% 0%;
+    }
+    .middle-img{
+        margin: 3% 0 2% 0;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .two div{
+        width: 80%;
+    }
+    
 }
